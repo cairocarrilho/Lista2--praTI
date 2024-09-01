@@ -23,7 +23,7 @@ const vendas = [
 
 let countVendas =0
 let countTotal = 0
-vendas.forEach((valorVendas, index) => {
+vendas.forEach((valorVendas) => {
        countVendas =  valorVendas.valor * valorVendas.quantidade
        countTotal += countVendas
     }

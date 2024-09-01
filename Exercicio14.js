@@ -9,7 +9,7 @@
 const empresa = {
     departamentos:[
         {
-            departamento:'Recursos Humanos',
+            nome:'RH',
             funcionarios: ['Ana', 'João', 'Maria']
         },
         {
@@ -23,3 +23,16 @@ const empresa = {
 
     ]
 }
+
+
+for(let depto in empresa.departamentos){
+   const departamentoPrimario = empresa.departamentos[depto];
+   console.log(departamentoPrimario.nome)
+
+        for (let funcionario of departamentoPrimario.funcionarios){
+            console.log(funcionario)
+        }
+
+
+}
+console.log(empresa.departamentos)
